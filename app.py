@@ -1,8 +1,6 @@
 from fastapi import FastAPI, HTTPException
 from routers import routerPredictions
 from fastapi.middleware.cors import CORSMiddleware
-import sklearn
-print(sklearn.__version__)
 
 app = FastAPI()
 app.include_router(routerPredictions.router)

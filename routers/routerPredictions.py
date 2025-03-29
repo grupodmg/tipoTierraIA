@@ -5,7 +5,7 @@ from interfaces import TierraData
 
 router = APIRouter()
 
-with open("tipodecultivo.pkl", "rb") as file:
+with open("svcPredict.pkl", "rb") as file:
     model = pickle.load(file)
 
 import pandas as pd
